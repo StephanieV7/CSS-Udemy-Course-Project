@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+#product-overview {
+  background: url("freedom.jpg");
+  width: 100%;
+  padding: 10px;
+  height: 528px;
+}
+
+.section-title {
+  color: #0e4f1f;
+  text-align: center;
+}
+
+.plan {
+  background-color: rgb(191, 216, 197);
+  text-align: center;
+  padding: 16px;
+  margin: 8px;
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
+}
+
+.plan__annotation {
+  background-color: white;
+  color: #0e4f1f;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.plan__title {
+  color: #053010;
+}
+
+.plan__price {
+  color: #5a6b5f;
+}
+
+.plan--highlighted .plan__title {
+  color: white;
+}
+
+.plan--highlighted .plan__price {
+  color: #053010;
+}
+
+.plan--highlighted {
+  background-color: rgb(104, 155, 116);
+  color: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.plan__features {
+  list-style: none;
+}
+
+.plan__feature {
+  margin: 8px 0px;
+}
+
+.button {
+  background-color: #053010;
+  color: white;
+  font: inherit;
+  border: 1.5px solid #053010;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background: white;
+  color: #053010;
+}
+.button:focus {
+  outline: none;
+}
+
+#key-features {
+  background: #ff1b68;
+  margin-top: 80px;
+  padding: 16px;
+}
+
+#key-features .section-title {
+  color: white;
+  margin-top: 32px;
+}
+
+#product-overview h1 {
+  color: white;
+  font-family: "Anton", sans-serif;
+}
+
+.main-header {
+  width: 100%;
+  background: rgb(191, 216, 197);
+  padding: 8px 16px;
+}
+
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-header__brand {
+  color: #0e4f1f;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 74px);
+  vertical-align: middle;
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  color: #0e4f1f;
+  font-weight: bold;
+  padding: 3px 0;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: aliceblue;
+  border-bottom: 5px solid white;
+}
+
+.main-nav__item--cta a {
+  color: white;
+  background: #ff1b68;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.main-nav__item--cta:hover,
+.main-nav__item--cta:active {
+  color: #ff1b68;
+  background: white;
+  border: none;
+}
+
+/* #overview h1 {
+    background-color: red;
+   
+} */
+
+/* h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: blueviolet;
+} */
+
+/* 
+- Selectors - div, blog.post, # main-title, [disabled], *
+- Properties - background, backgounr-color, width, margin, display, etc.
+- Values - redd, 30%, 10px, etc.; values are tightly coupled with specific property - pre-defined options (display: block; overflow: auto;), colors, length, sizes & numbers, functions
+-the class overwrites the element selector, no matter if it's before or after it.
+-CSS - cascading stylesheet - multiple rules can be applied to the same element . 
+-Specificity resolve conflicts arising from multiple Rules. Lowest to highst -   TAG SELECTORS, CLASS & PSEUDO-CLASS & ATTRIBUTE SELECTORS, ID SELECTORS, ININE STYLES
+-INHERITANCE - an element inherits its parent style (not only the direct parents but all above); it always comes at the bottom of the hierarchy
+-combinators (#overview h1) have higher specifity than tags (h1); this is not inheritance, we are settting a speicifi style for an element inside another element
+*/
+
+/* 
+COMBINATORS- you can combine multiple selectors, not only 2
+- Adjacent Sibling (div + p + ...) - it assigns it to all direct sibling of the first tag -> elements share the same parent and second element comes immediately afrter the first element 
+- General Sibling (div ~ p) - it will apply the style to all siblings (not only next to each other)
+- Child (div > p) - it applies to direct children, but it doesn't work for nested elements
+- Descendant (div p) - the level doesn't matter, the style is applied to direct and non-direct children of the element
+*/
