@@ -11,7 +11,6 @@
   width: 100vw;
   padding: 10px;
   height: 33vh;
-  margin-top: 2.75rem;
   position: relative;
 }
 
@@ -187,7 +186,7 @@
   border-color: #ff5454;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 40rem) and (min-height: 40rem) {
   #product-overview {
     height: 40vh;
     background-position: 50% 25%;
@@ -197,16 +196,6 @@
     font-size: 3rem;
   }
 }
-
-/* #overview h1 {
-    background-color: red;
-   
-} */
-
-/* h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: blueviolet;
-} */
 
 /* 
 - Selectors - div, blog.post, # main-title, [disabled], *
